@@ -15,4 +15,4 @@ A responsive frontend developer portfolio built with HTML and CSS.
 - CSS3 (Flexbox + Grid)
 
 ## Live Site
-https://your-link.netlify.app
+(https://nova-portfolio-2.netlify.app/)

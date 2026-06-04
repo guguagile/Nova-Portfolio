@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#0A0A09">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Golide Investments — International ventures in real estate, website design, and sustainable agriculture across Worldwide, the world, and Zimbabwe.">
+  <title>Golide Investments — Global Ventures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/5c9113680a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAV
+══════════════════════════════════════════ -->
+<nav>
+  <a class="nav-logo" href="#" aria-label="Golide Investments home">GOLIDE<span>Investments</span></a>
+
+  <div id="nav-menu" role="navigation" aria-label="Main navigation">
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#sectors">Sectors</a></li>
+      <li><a href="#regions">Regions</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="#contact">Enquire Now</a>
+  </div>
+
+  <button class="nav-toggle" id="nav-toggle"
+          aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section class="hero">
+  <!-- Globe panel (top on mobile, right on desktop) -->
+  <div class="hero-right">
+    <div class="hero-geo">
+      <svg class="hero-globe" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <radialGradient id="globeGrad" cx="45%" cy="40%">
+            <stop offset="0%" stop-color="#2A2A2A" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#050505" stop-opacity="0.98"/>
+          </radialGradient>
+          <radialGradient id="glowGrad" cx="50%" cy="50%">
+            <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <circle cx="200" cy="200" r="180" fill="url(#glowGrad)"/>
+        <circle cx="200" cy="200" r="148" fill="url(#globeGrad)" stroke="rgba(201,168,76,0.25)" stroke-width="0.5"/>
+        <g stroke="rgba(201,168,76,0.08)" stroke-width="0.5" fill="none">
+          <ellipse cx="200" cy="200" rx="148" ry="25"/>
+          <ellipse cx="200" cy="200" rx="148" ry="60"/>
+          <ellipse cx="200" cy="200" rx="148" ry="100"/>
+          <ellipse cx="200" cy="200" rx="148" ry="130"/>
+          <line x1="200" y1="52" x2="200" y2="348"/>
+          <ellipse cx="200" cy="200" rx="60" ry="148"/>
+          <ellipse cx="200" cy="200" rx="100" ry="148"/>
+          <ellipse cx="200" cy="200" rx="120" ry="148"/>
+        </g>
+        <g class="orbit-ring">
+          <ellipse cx="200" cy="200" rx="175" ry="40" stroke="rgba(201,168,76,0.18)" stroke-width="0.5" fill="none" stroke-dasharray="4 4"/>
+        </g>
+        <g class="orbit-ring-2">
+          <ellipse cx="200" cy="200" rx="40" ry="175" stroke="rgba(201,168,76,0.12)" stroke-width="0.5" fill="none" stroke-dasharray="4 4"/>
+        </g>
+        <g fill="rgba(201,168,76,0.18)" stroke="rgba(201,168,76,0.4)" stroke-width="0.5">
+          <path d="M110,120 L155,105 L175,115 L185,130 L180,160 L165,185 L145,200 L120,210 L105,190 L95,165 L100,140 Z"/>
+          <path d="M215,175 L245,165 L265,180 L270,220 L255,255 L235,265 L215,255 L205,230 L205,200 Z"/>
+          <path d="M210,100 L245,95 L260,110 L255,130 L235,135 L215,130 Z"/>
+        </g>
+        <!-- Worldwide pin -->
+        <circle cx="140" cy="155" r="4"  fill="#C9A84C" class="pulse-dot"/>
+        <circle cx="140" cy="155" r="8"  fill="none" stroke="#C9A84C" stroke-width="0.5" opacity="0.5" class="pulse-dot"/>
+        <circle cx="140" cy="155" r="12" fill="none" stroke="#C9A84C" stroke-width="0.5" opacity="0.25" class="pulse-dot"/>
+        <!-- Zimbabwe pin -->
+        <circle cx="245" cy="220" r="4" fill="#FFFFFF" class="pulse-dot-b"/>
+        <circle cx="245" cy="220" r="8" fill="none" stroke="#FFFFFF" stroke-width="0.5" opacity="0.4" class="pulse-dot-b"/>
+        <!-- Global web pin -->
+        <circle cx="230" cy="112" r="4" fill="#C9A84C" class="pulse-dot-c"/>
+        <circle cx="230" cy="112" r="8" fill="none" stroke="#C9A84C" stroke-width="0.5" opacity="0.4" class="pulse-dot-c"/>
+        <!-- Connection lines -->
+        <line x1="140" y1="155" x2="230" y2="112" stroke="rgba(201,168,76,0.22)" stroke-width="0.5" stroke-dasharray="3 3"/>
+        <line x1="140" y1="155" x2="245" y2="220" stroke="rgba(201,168,76,0.18)" stroke-width="0.5" stroke-dasharray="3 3"/>
+        <line x1="230" y1="112" x2="245" y2="220" stroke="rgba(201,168,76,0.18)" stroke-width="0.5" stroke-dasharray="3 3"/>
+        <ellipse cx="165" cy="155" rx="35" ry="20" fill="rgba(255,255,255,0.03)" transform="rotate(-30 165 155)"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Copy panel (bottom on mobile, left on desktop) -->
+  <div class="hero-left">
+    <p class="hero-eyebrow">International Ventures Since 2008</p>
+    <h1 class="hero-title">
+      Where<br><em>land,</em><br>
+      design &amp;<br>
+      harvest<br>converge.
+    </h1>
+    <p class="hero-sub">
+      A rare holding of three distinct disciplines — real estate across Worldwide,
+      digital design for global brands, and sustainable agriculture in Zimbabwe's heartland.
+    </p>
+    <div class="hero-cta-row">
+      <a class="btn-primary" href="#sectors">Explore Our Work</a>
+      <a class="btn-ghost"   href="#about">Our Story</a>
+    </div>
+  </div>
+
+  <!-- Sector pills — scrollable strip at the bottom -->
+  <div class="hero-sectors" aria-label="Business sectors">
+    <div class="hero-sector-item">
+      <span class="sector-icon" aria-hidden="true">🏢</span>
+      <div>
+        <div class="sector-label">Real Estate</div>
+        <div class="sector-region">Worldwide</div>
+      </div>
+    </div>
+    <div class="hero-sector-item">
+      <span class="sector-icon" aria-hidden="true">🌐</span>
+      <div>
+        <div class="sector-label">Web Design</div>
+        <div class="sector-region">Worldwide</div>
+      </div>
+    </div>
+    <div class="hero-sector-item">
+      <span class="sector-icon" aria-hidden="true">🌿</span>
+      <div>
+        <div class="sector-label">Farming</div>
+        <div class="sector-region">Zimbabwe</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     TICKER
+══════════════════════════════════════════ -->
+<div class="divider-strip" aria-hidden="true">
+  <div class="ticker-text">
+    <span>Real Estate — Worldwide</span><span>✦</span>
+    <span>Web Design — Global</span><span>✦</span>
+    <span>Sustainable Agriculture — Zimbabwe</span><span>✦</span>
+    <span>Golide Investments — Est. 2008</span><span>✦</span>
+    <span>Real Estate — Worldwide</span><span>✦</span>
+    <span>Web Design — Global</span><span>✦</span>
+    <span>Sustainable Agriculture — Zimbabwe</span><span>✦</span>
+    <span>Golide Investments — Est. 2008</span><span>✦</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════ -->
+<section class="about" id="about">
+  <div class="about-visual">
+    <div class="about-img-block">
+      <div class="about-img-inner"></div>
+      <div class="about-img-label">Golide Investments — Global Portfolio</div>
+      <div class="about-img-geo">
+        <svg viewBox="0 0 300 360" xmlns="http://www.w3.org/2000/svg" style="width:80%; opacity:0.92;" aria-hidden="true">
+          <rect x="20" y="20"  width="260" height="100" fill="rgba(201,168,76,0.07)" rx="2"/>
+          <rect x="20" y="20"  width="260" height="3"   fill="#C9A84C"/>
+          <text x="40" y="55"  font-family="Cormorant Garamond,serif" font-size="14" fill="rgba(255,255,255,0.85)" font-weight="300">Real Estate</text>
+          <text x="40" y="78"  font-family="Syne,sans-serif" font-size="9" fill="rgba(201,168,76,0.75)" letter-spacing="2">Worldwide</text>
+          <rect x="160" y="60" width="12" height="45" fill="rgba(201,168,76,0.25)"/>
+          <rect x="178" y="45" width="16" height="60" fill="rgba(201,168,76,0.4)"/>
+          <rect x="200" y="55" width="14" height="50" fill="rgba(201,168,76,0.3)"/>
+          <rect x="220" y="65" width="10" height="40" fill="rgba(201,168,76,0.2)"/>
+          <rect x="236" y="50" width="18" height="55" fill="rgba(201,168,76,0.35)"/>
+          <rect x="20"  y="135" width="260" height="100" fill="rgba(255,255,255,0.04)" rx="2"/>
+          <rect x="20"  y="135" width="260" height="3"   fill="#FFFFFF"/>
+          <text x="40" y="170" font-family="Cormorant Garamond,serif" font-size="14" fill="rgba(255,255,255,0.85)" font-weight="300">Web Design</text>
+          <text x="40" y="193" font-family="Syne,sans-serif" font-size="9" fill="rgba(201,168,76,0.75)" letter-spacing="2">WORLDWIDE</text>
+          <rect x="160" y="148" width="100" height="70" rx="3" fill="rgba(20,20,20,0.8)" stroke="rgba(201,168,76,0.3)" stroke-width="0.5"/>
+          <rect x="160" y="148" width="100" height="12" rx="3" fill="rgba(201,168,76,0.15)"/>
+          <circle cx="168" cy="154" r="2" fill="rgba(255,255,255,0.3)"/>
+          <circle cx="176" cy="154" r="2" fill="rgba(255,255,255,0.3)"/>
+          <circle cx="184" cy="154" r="2" fill="rgba(255,255,255,0.3)"/>
+          <rect x="168" y="170" width="60" height="4" rx="1" fill="rgba(201,168,76,0.4)"/>
+          <rect x="168" y="180" width="80" height="3" rx="1" fill="rgba(255,255,255,0.12)"/>
+          <rect x="168" y="188" width="70" height="3" rx="1" fill="rgba(255,255,255,0.08)"/>
+          <rect x="20"  y="250" width="260" height="100" fill="rgba(201,168,76,0.05)" rx="2"/>
+          <rect x="20"  y="250" width="260" height="3"   fill="#C9A84C"/>
+          <text x="40" y="285" font-family="Cormorant Garamond,serif" font-size="14" fill="rgba(255,255,255,0.85)" font-weight="300">Agriculture</text>
+          <text x="40" y="308" font-family="Syne,sans-serif" font-size="9" fill="rgba(201,168,76,0.75)" letter-spacing="2">Zimbabwe</text>
+          <circle cx="240" cy="268" r="10" fill="rgba(201,168,76,0.25)"/>
+          <line x1="195" y1="340" x2="200" y2="295" stroke="rgba(201,168,76,0.6)" stroke-width="1.5"/>
+          <line x1="210" y1="340" x2="208" y2="293" stroke="rgba(201,168,76,0.6)" stroke-width="1.5"/>
+          <line x1="225" y1="340" x2="218" y2="292" stroke="rgba(201,168,76,0.6)" stroke-width="1.5"/>
+          <line x1="240" y1="340" x2="230" y2="290" stroke="rgba(201,168,76,0.6)" stroke-width="1.5"/>
+          <line x1="255" y1="340" x2="243" y2="293" stroke="rgba(201,168,76,0.6)" stroke-width="1.5"/>
+        </svg>
+      </div>
+    </div>
+    <div class="about-img-accent"></div>
+  </div>
+
+  <div class="about-text">
+    <p class="section-label">Our Story</p>
+    <h2 class="section-title">
+      Multiple continents.<br>
+      One <em>unified</em><br>
+      philosophy.
+    </h2>
+    <p class="about-body">
+      Golide Investments began with a singular belief: that disciplined investment, exceptional craftsmanship,
+      and responsible stewardship of the land could coexist across wildly different industries and geographies.
+    </p>
+    <p class="about-body">
+      From acquiring undervalued properties in emerging Worldwiden markets, to crafting digital presences
+      for international brands, to cultivating drought-resilient crops on Zimbabwe's semiarid plains —
+      every venture is driven by the same long-term thinking.
+    </p>
+    <div class="about-stats">
+      <div>
+        <div class="stat-number">17<span>+</span></div>
+        <div class="stat-label">Years Active</div>
+      </div>
+      <div>
+        <div class="stat-number">3</div>
+        <div class="stat-label">Global Sectors</div>
+      </div>
+      <div>
+        <div class="stat-number">40<span>+</span></div>
+        <div class="stat-label">Client Nations</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     SECTORS
+══════════════════════════════════════════ -->
+<section class="sectors" id="sectors">
+  <div class="sectors-header">
+    <div>
+      <p class="section-label">What We Do</p>
+      <h2 class="section-title">Three sectors.<br>All <em>thriving.</em></h2>
+    </div>
+    <p class="sectors-intro">
+      Each of our three divisions operates with full autonomy and specialized expertise,
+      backed by Meridian's shared values of integrity, sustainability, and long-range vision.
+    </p>
+  </div>
+
+  <div class="sectors-grid">
+
+    <!-- Real Estate -->
+    <div class="sector-card">
+      <div class="sector-bg sector-bg-real-estate">
+        <svg class="sector-pattern" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect x="10"  y="200" width="30" height="280" fill="rgba(201,168,76,0.12)"/>
+          <rect x="50"  y="150" width="40" height="330" fill="rgba(201,168,76,0.2)"/>
+          <rect x="100" y="180" width="35" height="300" fill="rgba(201,168,76,0.14)"/>
+          <rect x="145" y="120" width="50" height="360" fill="rgba(201,168,76,0.25)"/>
+          <rect x="205" y="160" width="38" height="320" fill="rgba(201,168,76,0.16)"/>
+          <rect x="253" y="140" width="45" height="340" fill="rgba(201,168,76,0.22)"/>
+          <rect x="308" y="190" width="32" height="290" fill="rgba(201,168,76,0.13)"/>
+          <rect x="350" y="100" width="55" height="380" fill="rgba(201,168,76,0.28)"/>
+          <rect x="58"  y="165" width="6" height="6" fill="rgba(201,168,76,0.5)"/>
+          <rect x="70"  y="165" width="6" height="6" fill="rgba(201,168,76,0.6)"/>
+          <rect x="155" y="135" width="8" height="8" fill="rgba(201,168,76,0.65)"/>
+          <rect x="170" y="135" width="8" height="8" fill="rgba(201,168,76,0.4)"/>
+          <rect x="362" y="115" width="8" height="8" fill="rgba(201,168,76,0.7)"/>
+        </svg>
+      </div>
+      <div class="sector-content">
+        <div class="sector-num">01</div>
+        <h3 class="sector-name">Real Estate</h3>
+        <p class="sector-region-tag">🌎 Worldwide</p>
+        <p class="sector-desc">Residential, commercial, and mixed-use acquisitions from Vancouver to Miami. We identify undervalued assets in high-growth corridors and develop them with intentional design and community sensitivity.</p>
+        <a class="sector-link" href="#contact">Explore portfolio <span class="sector-link-arrow"></span></a>
+      </div>
+    </div>
+
+    <!-- Web Design -->
+    <div class="sector-card">
+      <div class="sector-bg sector-bg-web">
+        <svg class="sector-pattern" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <g stroke="rgba(201,168,76,0.1)" stroke-width="0.5" fill="none">
+            <line x1="0" y1="50"  x2="400" y2="50"/>  <line x1="0" y1="100" x2="400" y2="100"/>
+            <line x1="0" y1="150" x2="400" y2="150"/> <line x1="0" y1="200" x2="400" y2="200"/>
+            <line x1="0" y1="250" x2="400" y2="250"/> <line x1="0" y1="300" x2="400" y2="300"/>
+            <line x1="0" y1="350" x2="400" y2="350"/> <line x1="0" y1="400" x2="400" y2="400"/>
+            <line x1="50"  y1="0" x2="50"  y2="500"/> <line x1="100" y1="0" x2="100" y2="500"/>
+            <line x1="150" y1="0" x2="150" y2="500"/> <line x1="200" y1="0" x2="200" y2="500"/>
+            <line x1="250" y1="0" x2="250" y2="500"/> <line x1="300" y1="0" x2="300" y2="500"/>
+            <line x1="350" y1="0" x2="350" y2="500"/>
+          </g>
+          <rect x="50" y="80" width="300" height="200" rx="4" fill="rgba(20,20,20,0.7)" stroke="rgba(201,168,76,0.25)" stroke-width="0.5"/>
+          <rect x="50" y="80" width="300" height="22"  rx="4" fill="rgba(201,168,76,0.12)"/>
+          <circle cx="65" cy="91" r="4" fill="rgba(255,255,255,0.2)"/>
+          <circle cx="78" cy="91" r="4" fill="rgba(255,255,255,0.2)"/>
+          <circle cx="91" cy="91" r="4" fill="rgba(255,255,255,0.2)"/>
+          <rect x="65" y="115" width="120" height="8" rx="2" fill="rgba(201,168,76,0.5)"/>
+          <rect x="65" y="132" width="200" height="4" rx="1" fill="rgba(255,255,255,0.1)"/>
+          <rect x="65" y="144" width="180" height="4" rx="1" fill="rgba(255,255,255,0.07)"/>
+          <rect x="200" y="115" width="130" height="80" rx="2" fill="rgba(201,168,76,0.07)" stroke="rgba(201,168,76,0.2)" stroke-width="0.5"/>
+          <rect x="65" y="340" width="180" height="6" rx="1" fill="rgba(201,168,76,0.3)"/>
+          <rect x="65" y="355" width="140" height="6" rx="1" fill="rgba(255,255,255,0.15)"/>
+          <rect x="80" y="370" width="100" height="6" rx="1" fill="rgba(201,168,76,0.2)"/>
+        </svg>
+      </div>
+      <div class="sector-content">
+        <div class="sector-num">02</div>
+        <h3 class="sector-name">Website Design</h3>
+        <p class="sector-region-tag">🌐 Global Clients</p>
+        <p class="sector-desc">Bespoke digital experiences for boutique hospitality, luxury goods, nonprofits, and professional services worldwide. We craft every pixel with intention — conversion-focused, aesthetically uncompromising.</p>
+        <a class="sector-link" href="#contact">View work <span class="sector-link-arrow"></span></a>
+      </div>
+    </div>
+
+    <!-- Farming -->
+    <div class="sector-card">
+      <div class="sector-bg sector-bg-farming">
+        <svg class="sector-pattern" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect x="0" y="320" width="400" height="180" fill="rgba(201,168,76,0.08)"/>
+          <circle cx="200" cy="240" r="60" fill="rgba(201,168,76,0.1)"/>
+          <circle cx="200" cy="240" r="35" fill="rgba(201,168,76,0.15)"/>
+          <path d="M0 330 Q100 320 200 330 Q300 340 400 330" stroke="rgba(201,168,76,0.25)" stroke-width="2" fill="none"/>
+          <path d="M0 355 Q100 345 200 355 Q300 365 400 355" stroke="rgba(201,168,76,0.2)"  stroke-width="2" fill="none"/>
+          <path d="M0 380 Q100 370 200 380 Q300 390 400 380" stroke="rgba(201,168,76,0.15)" stroke-width="2" fill="none"/>
+          <ellipse cx="100" cy="305" rx="18" ry="28" fill="rgba(201,168,76,0.35)"/>
+          <rect x="96"  y="305" width="8"  height="25" fill="rgba(170,140,50,0.5)"/>
+          <ellipse cx="150" cy="298" rx="22" ry="32" fill="rgba(201,168,76,0.45)"/>
+          <rect x="145" y="298" width="10" height="30" fill="rgba(170,140,50,0.5)"/>
+          <ellipse cx="210" cy="295" rx="25" ry="35" fill="rgba(201,168,76,0.55)"/>
+          <rect x="204" y="300" width="12" height="30" fill="rgba(170,140,50,0.5)"/>
+          <ellipse cx="275" cy="300" rx="20" ry="30" fill="rgba(201,168,76,0.4)"/>
+          <rect x="270" y="302" width="10" height="28" fill="rgba(170,140,50,0.5)"/>
+          <ellipse cx="325" cy="308" rx="16" ry="24" fill="rgba(201,168,76,0.32)"/>
+          <circle cx="60"  cy="80"  r="1"   fill="rgba(255,255,255,0.3)"/>
+          <circle cx="160" cy="50"  r="1.5" fill="rgba(255,255,255,0.4)"/>
+          <circle cx="280" cy="70"  r="1"   fill="rgba(255,255,255,0.3)"/>
+          <circle cx="340" cy="100" r="1.5" fill="rgba(255,255,255,0.35)"/>
+        </svg>
+      </div>
+      <div class="sector-content">
+        <div class="sector-num">03</div>
+        <h3 class="sector-name">Agriculture</h3>
+        <p class="sector-region-tag">🌍 Zimbabwe, Africa</p>
+        <p class="sector-desc">Operating arable land in the Matebeleland region of Zimbabwe, cultivating drought-resilient crops with a focus on food sovereignty, local employment, and regenerative land practices.</p>
+        <a class="sector-link" href="#contact">Learn more <span class="sector-link-arrow"></span></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     APPROACH
+══════════════════════════════════════════ -->
+<section class="approach" id="approach">
+  <div class="approach-header">
+    <p class="section-label">How We Work</p>
+    <h2 class="section-title">Our approach, everywhere we operate.</h2>
+  </div>
+  <div class="approach-grid">
+    <div class="approach-item">
+      <span class="approach-num" aria-hidden="true">01</span>
+      <h3 class="approach-title">Long-term thinking</h3>
+      <p class="approach-text">We don't chase quarterly metrics. Every acquisition, client engagement, and field planted is evaluated against a decade-long horizon.</p>
+    </div>
+    <div class="approach-item">
+      <span class="approach-num" aria-hidden="true">02</span>
+      <h3 class="approach-title">Local expertise</h3>
+      <p class="approach-text">Golide Inc is built on deep partnerships with on-the-ground experts. In Gaborone or Guelph, we listen before we lead.</p>
+    </div>
+    <div class="approach-item">
+      <span class="approach-num" aria-hidden="true">03</span>
+      <h3 class="approach-title">Ethical operations</h3>
+      <p class="approach-text">Environmental and social accountability isn't a box to check — it's the standard against which every Golide Incdecision is measured.</p>
+    </div>
+    <div class="approach-item">
+      <span class="approach-num" aria-hidden="true">04</span>
+      <h3 class="approach-title">Craft at scale</h3>
+      <p class="approach-text">Whether renovating a duplex or designing a brand platform for 50 markets, quality is non-negotiable and visible in every detail.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     REGIONS
+══════════════════════════════════════════ -->
+<section class="regions" id="regions">
+  <div class="regions-header">
+    <p class="section-label">Where We Operate</p>
+    <h2 class="section-title">Rooted across<br>the <em>world.</em></h2>
+  </div>
+
+  <div class="map-container">
+    <svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g fill="rgba(201,168,76,0.08)" stroke="rgba(201,168,76,0.18)" stroke-width="0.5">
+        <path d="M80,60 L200,50 L230,70 L245,100 L240,140 L210,170 L185,200 L170,230 L140,245 L110,240 L85,210 L65,180 L60,140 L70,100 Z"/>
+        <path d="M150,250 L185,240 L200,270 L205,310 L195,360 L175,385 L150,380 L132,350 L125,310 L130,270 Z"/>
+        <path d="M380,55 L435,48 L455,65 L450,90 L430,100 L400,98 L380,80 Z"/>
+        <path d="M390,105 L455,100 L480,130 L490,180 L485,240 L465,285 L440,300 L410,295 L388,260 L380,210 L380,160 L385,120 Z"/>
+        <path d="M460,50 L630,45 L670,80 L660,130 L620,155 L570,165 L520,150 L485,120 L465,90 Z"/>
+        <path d="M620,220 L690,215 L720,240 L715,280 L690,300 L650,298 L620,270 L612,245 Z"/>
+      </g>
+      <path d="M80,60 L200,50 L230,70 L245,100 L240,140 L210,170 L185,200 L170,230 L140,245 L110,240 L85,210 L65,180 L60,140 L70,100 Z" fill="rgba(201,168,76,0.2)" stroke="rgba(201,168,76,0.6)" stroke-width="1"/>
+      <path d="M390,105 L455,100 L480,130 L490,180 L485,240 L465,285 L440,300 L410,295 L388,260 L380,210 L380,160 L385,120 Z" fill="rgba(201,168,76,0.15)" stroke="rgba(201,168,76,0.5)" stroke-width="1"/>
+      <circle cx="155" cy="130" r="5" fill="#C9A84C" opacity="0.9"/>
+      <circle cx="155" cy="130" r="10" fill="none" stroke="#C9A84C" stroke-width="0.5" opacity="0.5"/>
+      <text x="170" y="125" font-family="Syne,sans-serif" font-size="9" fill="rgba(201,168,76,0.9)" letter-spacing="1">Worldwide</text>
+      <circle cx="435" cy="195" r="5" fill="#FFFFFF" opacity="0.8"/>
+      <circle cx="435" cy="195" r="10" fill="none" stroke="#FFFFFF" stroke-width="0.5" opacity="0.4"/>
+      <text x="450" y="190" font-family="Syne,sans-serif" font-size="9" fill="rgba(255,255,255,0.8)" letter-spacing="1">Zimbabwe</text>
+      <circle cx="530" cy="90" r="4" fill="#C9A84C" opacity="0.6"/>
+      <text x="540" y="86" font-family="Syne,sans-serif" font-size="8" fill="rgba(201,168,76,0.6)" letter-spacing="1">GLOBAL DIGITAL</text>
+      <line x1="155" y1="130" x2="435" y2="195" stroke="rgba(201,168,76,0.2)" stroke-width="0.5" stroke-dasharray="4 4"/>
+      <line x1="155" y1="130" x2="530" y2="90"  stroke="rgba(201,168,76,0.15)" stroke-width="0.5" stroke-dasharray="4 4"/>
+      <line x1="435" y1="195" x2="530" y2="90"  stroke="rgba(201,168,76,0.15)" stroke-width="0.5" stroke-dasharray="4 4"/>
+    </svg>
+  </div>
+
+  <div class="regions-list">
+    <div class="region-item">
+      <div class="region-flag">🌎</div>
+      <h3 class="region-name">Worldwide</h3>
+      <div class="region-sector-tags"><span class="region-tag">Real Estate</span></div>
+      <p class="region-desc">Active in major and secondary markets across the United States and Canada — with focus in the Pacific Northwest, the Ontario corridor, and Sun Belt cities.</p>
+    </div>
+    <div class="region-item">
+      <div class="region-flag">🌐</div>
+      <h3 class="region-name">Global</h3>
+      <div class="region-sector-tags"><span class="region-tag">Web Design</span></div>
+      <p class="region-desc">Our web design practice serves clients across four continents — from independent studios to multinational brands — with a remote-first, timezone-agnostic workflow.</p>
+    </div>
+    <div class="region-item">
+      <div class="region-flag">🌍</div>
+      <h3 class="region-name">Zimbabwe</h3>
+      <div class="region-sector-tags"><span class="region-tag">Agriculture</span></div>
+      <p class="region-desc">Our Zimbabwe farming operations cover over 800 hectares of managed arable land, with partnership arrangements with local cooperatives and village farming initiatives.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════ -->
+<section class="contact" id="contact">
+  <div class="contact-info">
+    <p class="section-label">Get In Touch</p>
+    <h2 class="contact-title">Let's build<br>something<br><em>lasting.</em></h2>
+    <p class="contact-sub">Whether you're looking to invest, collaborate, or commission — we'd love to hear from you. Golide Incoperates across time zones with a small, attentive team.</p>
+
+    <div class="contact-detail">
+      <div class="contact-detail-icon" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="1.5">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+        </svg>
+      </div>
+      <div>
+        <div class="contact-detail-label">Headquarters</div>
+        <div class="contact-detail-value">Edmonton, Alberta, Canada</div>
+      </div>
+    </div>
+
+    <div class="contact-detail">
+      <div class="contact-detail-icon" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="1.5">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+        </svg>
+      </div>
+      <div>
+        <div class="contact-detail-label">General Enquiries</div>
+        <div class="contact-detail-value">hello@golideinvestments.gt.tc</div>
+      </div>
+    </div>
+
+    <div class="contact-detail">
+      <div class="contact-detail-icon" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+        </svg>
+      </div>
+      <div>
+        <div class="contact-detail-label">Response Time</div>
+        <div class="contact-detail-value">Within 2 business days</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-form-wrap">
+    <form class="contact-form" id="contact-form" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="fname">First Name</label>
+          <input class="form-input" id="fname" type="text" placeholder="Amara" autocomplete="given-name"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="lname">Last Name</label>
+          <input class="form-input" id="lname" type="text" placeholder="Osei" autocomplete="family-name"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" id="email" type="email" placeholder="amara@company.com" autocomplete="email"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="sector">Area of Interest</label>
+        <select class="form-select form-input" id="sector">
+          <option value="" disabled selected>Select a sector...</option>
+          <option>Real Estate — Worldwide</option>
+          <option>Website Design — Global</option>
+          <option>Agriculture — Zimbabwe</option>
+          <option>Partnership / Investment</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-textarea" id="message" placeholder="Tell us about your interest or project..."></textarea>
+      </div>
+      <button type="submit" class="form-submit" id="submit-btn">Send Enquiry →</button>
+    </form>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-brand">
+    <div class="footer-logo">GOLIDE<span>Investments Inc</span></div>
+    <p class="footer-tagline">A transnational holding across real estate, digital design, and sustainable agriculture. Est. 2008.</p>
+    <div class="footer-social">
+      <a class="social-btn" href="#"><i class="fa-brands fa-square-linkedin"></i></a>
+      <a class="social-btn" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      <a class="social-btn" href="#"><i class="fa-brands fa-square-twitter"></i></a>
+    </div>
+  </div>
+  <div>
+    <div class="footer-col-title">Sectors</div>
+    <ul class="footer-links">
+      <li><a href="#">Real Estate</a></li>
+      <li><a href="#">Web Design</a></li>
+      <li><a href="#">Agriculture</a></li>
+      <li><a href="#">Investment</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="footer-col-title">Company</div>
+    <ul class="footer-links">
+      <li><a href="#">About Golide Inc</a></li>
+      <li><a href="#">Our Team</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Press</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="footer-col-title">Regions</div>
+    <ul class="footer-links">
+      <li><a href="#">North America & Worldwide</a></li>
+      <li><a href="#">Zimbabwe Office</a></li>
+      <li><a href="#">Global Web Studio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  <span class="footer-copy">© 2025 Golide Investments International. All rights reserved.</span>
+  <span class="footer-copy">Privacy Policy · Terms of Use</span>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
